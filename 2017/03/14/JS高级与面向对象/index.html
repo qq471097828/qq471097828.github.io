@@ -6,14 +6,30 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>柴米油盐</title>
+  <title>JS高级与面向对象 | 柴米油盐</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="柴米油盐">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="JS高级与面向对象一、JavaScript基础知识回顾1.1 JavaScript1.1.1 javascript是什么？
+JavaScript是一门编程语言，用来操作页面标签和样式。
+
+1.1.2 javascript的组成
+ECMAScript：可以为不同种类的宿主环境提供核心的脚本编程能力，因此核心的脚本语言是与任何特定的宿主环境分开进行规定的。Web 浏览器对于 ECMAScript 来说">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JS高级与面向对象">
+<meta property="og:url" content="http://yoursite.com/2017/03/14/JS高级与面向对象/index.html">
 <meta property="og:site_name" content="柴米油盐">
+<meta property="og:description" content="JS高级与面向对象一、JavaScript基础知识回顾1.1 JavaScript1.1.1 javascript是什么？
+JavaScript是一门编程语言，用来操作页面标签和样式。
+
+1.1.2 javascript的组成
+ECMAScript：可以为不同种类的宿主环境提供核心的脚本编程能力，因此核心的脚本语言是与任何特定的宿主环境分开进行规定的。Web 浏览器对于 ECMAScript 来说">
+<meta property="og:updated_time" content="2017-03-14T12:29:31.680Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="柴米油盐">
+<meta name="twitter:title" content="JS高级与面向对象">
+<meta name="twitter:description" content="JS高级与面向对象一、JavaScript基础知识回顾1.1 JavaScript1.1.1 javascript是什么？
+JavaScript是一门编程语言，用来操作页面标签和样式。
+
+1.1.2 javascript的组成
+ECMAScript：可以为不同种类的宿主环境提供核心的脚本编程能力，因此核心的脚本语言是与任何特定的宿主环境分开进行规定的。Web 浏览器对于 ECMAScript 来说">
   
     <link rel="alternative" href="/atom.xml" title="柴米油盐" type="application/atom+xml">
   
@@ -149,96 +165,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-regexp" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-JS高级与面向对象" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/03/14/regexp/">正则</a>
-    </h1>
-  
-
-        
-        <a href="/2017/03/14/regexp/" class="archive-article-date">
-  	<time datetime="2017-03-14T12:32:00.894Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-14</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="正则"><a href="#正则" class="headerlink" title="正则"></a>正则</h1><h2 id="正则应用场景"><a href="#正则应用场景" class="headerlink" title="正则应用场景"></a>正则应用场景</h2><ul>
-<li>字符串格式验证</li>
-<li>提取符合规则的的子串</li>
-<li>替换匹配的内容</li>
-</ul>
-<h2 id="js中正则相关API"><a href="#js中正则相关API" class="headerlink" title="js中正则相关API"></a>js中正则相关API</h2><h3 id="正则API"><a href="#正则API" class="headerlink" title="正则API"></a>正则API</h3><ul>
-<li>test() 检测字符串是否含有与正则表达式匹配的文本</li>
-<li>exec() 从字符串中获取与正则表达式匹配的文本</li>
-</ul>
-<h3 id="字符串API"><a href="#字符串API" class="headerlink" title="字符串API"></a>字符串API</h3><ul>
-<li>search()返回第一个与正则相匹配的子串的起始位置。如果没有找到任何匹配的子串，则返回-1。</li>
-<li>split()返回分割后的数组;参数一：分割符；参数二：返回数组的长度限制</li>
-<li>match()返回存放匹配结果的数组(分为全局匹配和非全局匹配)</li>
-<li>replace()返回替换后的新字符串</li>
-</ul>
-<h2 id="正则常用规则"><a href="#正则常用规则" class="headerlink" title="正则常用规则"></a>正则常用规则</h2><h3 id="元字符"><a href="#元字符" class="headerlink" title="元字符"></a>元字符</h3><ul>
-<li>常用元字符：\d \D \s \S \b \B \w \W</li>
-</ul>
-<h3 id="转移字符"><a href="#转移字符" class="headerlink" title="转移字符"></a>转移字符</h3><ul>
-<li>正则需要转义字符：’$’, ‘(‘, ‘)’, ‘*’, ‘+’, ‘.’, ‘[‘, ‘]’, ‘?’, ‘\‘, ‘^’, ‘{‘, ‘}’, ‘|’</li>
-<li>^ $</li>
-</ul>
-<h3 id="量词"><a href="#量词" class="headerlink" title="量词"></a>量词</h3><ul>
-<li>?：规定前面的元素或组合项出现零次或一次。例如，“zo?”可以匹配z或zo，可以匹配“zoo”中的zo部分。但不能匹配整个“zoo”。 ?等效于{0,1} 。 </li>
-<li>+：规定前面的元素或组合项必须出现一次或连续多次。例如，“zo+”与“zo”和“zoo”匹配，但与“z”不匹配。+等效于{1,} 。</li>
-<li><em>：规定前面的元素或组合项可以出现连续多次或零次。例如，“zo</em>”与“z”和“zoo”都能匹配。 *等效于{0,} </li>
-<li>{n}：规定前面的元素或组合项连续出现n次。n为非负整数。例如，“0{2}”不能与“Bob”中的o匹配，但可以与“food”中的两个o匹配，也可以与“fooood”中的任意两个连续的o匹配。</li>
-<li>{n,m}：规定前面的元素或组合项至少连续出现n次，最多连续出现m次。例如，“o{1,3}”可匹配“food”中的两个o，又可以匹配“foood”中的3个连续o。</li>
-<li>{n,}：规定前面的元素或组合项至少连续出现n次。n为非负整数。例如，“o{2,}”不能与“Bob”中的o匹配，但可以与“fooood”中的所有o匹配。</li>
-</ul>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/03/14/regexp/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-  
-    <article id="post-JS高级与面向对象" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/03/14/JS高级与面向对象/">JS高级与面向对象</a>
+    <h1 class="article-title" itemprop="name">
+      JS高级与面向对象
     </h1>
   
 
@@ -665,478 +599,26 @@
       
 
       
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/03/14/JS高级与面向对象/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-  
-    <article id="post-HTTP服务&amp;AJAX编程" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/03/14/HTTP服务&AJAX编程/">HTTP服务&amp;AJAX编程</a>
-    </h1>
-  
-
-        
-        <a href="/2017/03/14/HTTP服务&AJAX编程/" class="archive-article-date">
-  	<time datetime="2017-03-14T12:32:00.889Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-14</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="HTTP服务-amp-AJAX编程"><a href="#HTTP服务-amp-AJAX编程" class="headerlink" title="HTTP服务&amp;AJAX编程"></a>HTTP服务&amp;AJAX编程</h1><p>[TOC]</p>
-<h2 id="一、HTTP服务"><a href="#一、HTTP服务" class="headerlink" title="一、HTTP服务"></a>一、HTTP服务</h2><h3 id="1-1-C-S和B-S"><a href="#1-1-C-S和B-S" class="headerlink" title="1.1 C/S和B/S"></a>1.1 C/S和B/S</h3><ul>
-<li>B/S架构：即Broswer、Server，将所有的服务都可以通过浏览器来完成，比如各种网站。</li>
-<li>C/S架构：即Client、Server，不同的服务需要安装不同的客户端软件，比如QQ、迅雷等。</li>
-<li>两者的区别：<ol>
-<li>B/S架构：<ul>
-<li>免安装，所有服务都通过浏览器来完成，节省系统资源，开发效率高，只需要开发一个基于html5的网页。</li>
-<li>安全性要差一些，所有的内容都需要从服务端加载，性能也要差一些。</li>
-</ul>
-</li>
-<li>C/S架构：<ul>
-<li>安全性要好一些，性能要好一些，安装包中可能集成一些大型的图片，运行更流畅。</li>
-<li>必须下载客户端软件才能使用服务。</li>
-</ul>
-</li>
-</ol>
-</li>
-</ul>
-<h3 id="1-2-客户端-amp-服务端"><a href="#1-2-客户端-amp-服务端" class="headerlink" title="1.2 客户端&amp;服务端"></a>1.2 客户端&amp;服务端</h3><h4 id="1-2-1-客户端"><a href="#1-2-1-客户端" class="headerlink" title="1.2.1 客户端"></a>1.2.1 客户端</h4><blockquote>
-<p>具有向服务器索取服务能力的终端，比如手机、电脑等，通过安装不同的客户端软件，可以获取不同的服务，比如通过QQ获得即时通讯服务、通过迅雷获得下载服务等。</p>
-</blockquote>
-<h4 id="1-2-2-服务端"><a href="#1-2-2-服务端" class="headerlink" title="1.2.2 服务端"></a>1.2.2 服务端</h4><blockquote>
-<p>对外提供服务器的，一般的客户端都对应有服务端，能够提供某种服务的机器（计算机）称为服务器。</p>
-</blockquote>
-<ul>
-<li><p>服务器类型：</p>
-<p>按照不同的划分标准，服务可划分为以下类型：</p>
-<ol>
-<li>按<strong>服务类型</strong>可分为：<ul>
-<li>文件服务器</li>
-<li>数据库服务器</li>
-</ul>
-</li>
-<li>按<strong>操作系统</strong>可分为：<ul>
-<li>Linux服务器体</li>
-<li>Windows服务器等</li>
-</ul>
-</li>
-<li>按<strong>应用软件</strong>可分为：<ul>
-<li>Apache服务器</li>
-<li>Nginx 服务器</li>
-<li>IIS服务器</li>
-<li>Tomcat服务器</li>
-<li>Node服务器等</li>
-</ul>
-</li>
-</ol>
-</li>
-<li><p>服务器软件：</p>
-<blockquote>
-<p>使计算机具备提供某种服务能力的应用软件，称为服务器软件，通过安装相应的服务软件，然后进行配置后就可以使计算具备了提供某种服务的能力。</p>
-</blockquote>
-<p>常见的服务器软件有：</p>
-<ol>
-<li>文件服务器：Server-U、FileZilla、VsFTP等；</li>
-<li>数据库服务器：Oracle、MySQL、PostgreSQL、MSSQL等；</li>
-<li>邮件服务器：Postfix、Sendmail等；</li>
-<li>web 服务器：Apache、Nginx、IIS、Tomcat、NodeJS等。</li>
-</ol>
-</li>
-<li><p>Web(http)服务器：</p>
-<blockquote>
-<p>即网站服务器，主要提供文档(文本、图片、视频、音频)浏览服务，一般安装Apache、Nginx服务器软件。</p>
-<p>HTTP服务器可以结合某一编程语言处理业务逻辑，由此进行的开发，通常称之为服务端开发。</p>
-<p>常见的运行在服务端的编程语言包括 PHP、Jsp、Asp、Python、Ruby、Perl等。</p>
-</blockquote>
-</li>
-</ul>
-<h3 id="1-3-网络基础"><a href="#1-3-网络基础" class="headerlink" title="1.3 网络基础"></a>1.3 网络基础</h3><h4 id="1-3-1-IP地址"><a href="#1-3-1-IP地址" class="headerlink" title="1.3.1 IP地址"></a>1.3.1 IP地址</h4><ul>
-<li><p>局域网IP：是由交换机或者路由器去分配的一个32位地址。</p>
-<p>局域网：是指在某一区域内由多台计算机互联成的计算机组。</p>
-</li>
-<li><p>公网IP：一般需要去电信部门申请。</p>
-</li>
-<li><p>查看本机IP地址：ping、ipconfig、ifconfig</p>
-<p>如百度的IP地址：<a href="http://119.75.217.109" target="_blank" rel="external">http://119.75.217.109</a></p>
-</li>
-</ul>
-<h4 id="1-3-2-域名"><a href="#1-3-2-域名" class="headerlink" title="1.3.2 域名"></a>1.3.2 域名</h4><blockquote>
-<p>由于IP地址基于数字，不方便记忆，于是便用域名来代替IP地址，域名是一个IP地址的“面具”。</p>
-<p>一个域名下面可以配置多个二级域名。</p>
-<p>域名可以去阿里云等网站申请，购买使用。</p>
-</blockquote>
-<p>查看域名对应的IP地址 ping、tracert</p>
-<h4 id="1-3-3-端口"><a href="#1-3-3-端口" class="headerlink" title="1.3.3 端口"></a>1.3.3 端口</h4><blockquote>
-<p>端口号是计算机与外界通讯交流的出口，每个端口对应不同的服务。一台计算机大概有6w多个端口，假设我的计算机要对外提供服务，我就必须占用一个端口对外提供服务。一台计算机可以对外提供多个服务，只要占用的端口不一样即可。web的端口是默认80，mysql对外提供数据库服务，默认端口是3306。</p>
-</blockquote>
-<ul>
-<li>查看端口占用情况 netstat -an</li>
-<li>常见端口号 80、8080、3306、21、22</li>
-</ul>
-<h4 id="1-3-4-DNS服务"><a href="#1-3-4-DNS服务" class="headerlink" title="1.3.4 DNS服务"></a>1.3.4 DNS服务</h4><p>DNS（Domain Name  System）域名系统，作用是进行域名管理。它记录了IP 地址和域名的映射关系。</p>
-<p>查找优先级：本机hosts文件 –&gt; DNS服务器。</p>
-<h3 id="1-4-搭建Web服务器"><a href="#1-4-搭建Web服务器" class="headerlink" title="1.4 搭建Web服务器"></a>1.4 搭建Web服务器</h3><h4 id="1-4-1-安装WampServer"><a href="#1-4-1-安装WampServer" class="headerlink" title="1.4.1 安装WampServer"></a>1.4.1 安装WampServer</h4><blockquote>
-<p>如果只安装apache，解析不了php，所以要安装wamp（windows apache mysql php）集成环境。</p>
-</blockquote>
-<h4 id="1-4-2-访问本机"><a href="#1-4-2-访问本机" class="headerlink" title="1.4.2 访问本机"></a>1.4.2 访问本机</h4><ul>
-<li><a href="http://192.168.136.80:80" target="_blank" rel="external">http://192.168.136.80:80</a></li>
-<li><a href="http://127.0.0.1:80" target="_blank" rel="external">http://127.0.0.1:80</a></li>
-<li><a href="http://localhost:80" target="_blank" rel="external">http://localhost:80</a></li>
-</ul>
-<h4 id="1-4-3-apache的配置"><a href="#1-4-3-apache的配置" class="headerlink" title="1.4.3 apache的配置"></a>1.4.3 apache的配置</h4><blockquote>
-<p>进入到这个目录下面去配置：C:\wamp\bin\apache\Apache2.2.21\conf\httpd.conf</p>
-</blockquote>
-<ul>
-<li>配置所有的用户都可以访问我的服务器：在235行添加<code>Allow from all</code>。</li>
-<li>修改默认访问路径：文件的178行<code>DocumentRoot &quot;f:/webwokspace&quot;</code>，文件的205 行 <code>&lt;Directory &quot;f:/webwokspace/&quot;&gt;</code>。</li>
-<li>修改默认端口号：修改文件第46行Listen后边的数值即可。</li>
-</ul>
-<h4 id="1-4-4-配置虚拟主机"><a href="#1-4-4-配置虚拟主机" class="headerlink" title="1.4.4 配置虚拟主机"></a>1.4.4 配置虚拟主机</h4><blockquote>
-<p>在一台Web服务器上，我们可以通过配置虚拟主机，然后分别设定根目录，实现对多个网站的管理。</p>
-</blockquote>
-<ul>
-<li><p>开启虚拟主机辅配置：</p>
-<ol>
-<li><p>在<code>C:\wamp\bin\apache\Apache2.2.21\conf\httpd.conf</code>467行找到<code>Include conf/extra/httpd-vhosts.conf</code>，打开前边的注释。</p>
-</li>
-<li><p>配置虚拟主机，打开<code>conf/extra/httpd-vhosts.conf</code>，分别修改以下三项：</p>
-<ul>
-<li>DocumentRoot “文件路径”</li>
-<li>ServerName “example.com”</li>
-<li>ServerAlias “www.example.com”</li>
-</ul>
-</li>
-<li><p>修改DNS（hosts）文件：</p>
-<p>打开<code>C:\Windows\System32\drivers\etc\hosts</code>，目录是固定的。</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">127.0.0.1	example.com</div><div class="line">127.0.0.1	www.example.com</div></pre></td></tr></table></figure>
-</li>
-</ol>
-</li>
-</ul>
-<h4 id="1-4-5-资源"><a href="#1-4-5-资源" class="headerlink" title="1.4.5 资源"></a>1.4.5 资源</h4><blockquote>
-<p>我们把服务器上面的这些文件都统称为资源。</p>
-</blockquote>
-<ul>
-<li>静态资源：可以通过浏览器直接打开，直接解析的我们成为静态资源。html、js、css、image我们可以理解成静态资源。</li>
-<li>动态资源：php、jsp、asp我们可以理解为动态资源。</li>
-<li>浏览器只认识静态资源。如果我的客户端浏览器访问的服务器上面的动态资源，服务器会把动态资源转换成静态资源，然后再丢给客户端浏览器。</li>
-<li>动态资源是在服务端运行的，静态资源是在客户端运行的。</li>
-</ul>
-<h3 id="1-5-PHP基础"><a href="#1-5-PHP基础" class="headerlink" title="1.5 PHP基础"></a>1.5 PHP基础</h3><h4 id="1-5-1-语法"><a href="#1-5-1-语法" class="headerlink" title="1.5.1 语法"></a>1.5.1 语法</h4><ul>
-<li><p>php代码必须放在：</p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;?php</span></div><div class="line">  <span class="comment">/** 这里是代码 **/</span> </div><div class="line"><span class="meta">?&gt;</span></div></pre></td></tr></table></figure>
-</li>
-<li><p>避免使用中文目录和中文文件名。</p>
-</li>
-</ul>
-<h4 id="1-5-2-变量"><a href="#1-5-2-变量" class="headerlink" title="1.5.2 变量"></a>1.5.2 变量</h4><ul>
-<li>变量以$开头 字母/数字/下划线 不能以数字开头</li>
-<li>大小写敏感（区分大小写）</li>
-</ul>
-<h4 id="1-5-3-数据类型"><a href="#1-5-3-数据类型" class="headerlink" title="1.5.3 数据类型"></a>1.5.3 数据类型</h4><ul>
-<li>字符串</li>
-<li>整型</li>
-<li>浮点型</li>
-<li>布尔型</li>
-<li>数组</li>
-</ul>
-<h4 id="1-5-4-内容输出"><a href="#1-5-4-内容输出" class="headerlink" title="1.5.4 内容输出"></a>1.5.4 内容输出</h4><ul>
-<li>echo：输出简单数据类型，如字符串、数值。</li>
-<li>print_r()：输出复杂数据类型，如数组。</li>
-<li>var_dump()：输出详细信息，如对象、数组。</li>
-</ul>
-<h4 id="1-5-5-运算符"><a href="#1-5-5-运算符" class="headerlink" title="1.5.5 运算符"></a>1.5.5 运算符</h4><ul>
-<li>基本与Javascript语法一致。</li>
-<li><code>.</code>号表示字符串拼接符，Javascript中为<code>+</code>号。</li>
-</ul>
-<h4 id="1-5-6-函数"><a href="#1-5-6-函数" class="headerlink" title="1.5.6 函数"></a>1.5.6 函数</h4><ul>
-<li>与Javascript基本一致。</li>
-<li>函数名对大小写不敏感。</li>
-<li>PHP中函数的参数可以设置一个默认值。</li>
-<li>几个常用的函数：<ol>
-<li>in_array()：是否在数组中。</li>
-<li>count()：计算数组长度。</li>
-<li>array_key_exists()：检测数组中是否存在key。</li>
-<li>file_get_contents：读取文件。</li>
-<li>move_upload_file()：移动上传的文件。</li>
-</ol>
-</li>
-</ul>
-<h4 id="1-5-7-表单处理"><a href="#1-5-7-表单处理" class="headerlink" title="1.5.7 表单处理"></a>1.5.7 表单处理</h4><ul>
-<li>表单name属性的是用来提供给服务端接收所传递数据而设置的。</li>
-<li>表单action属性设置接收数据的处理程序。</li>
-<li>表单method属性设置发送数据的方式。</li>
-<li>当上传文件是需要设置 enctype=”multipart/form-data”，且只能post方式。</li>
-<li>$_GET接收 get 传值。</li>
-<li>$_POST接收 post 传值。</li>
-<li>$_FILES接收文件上传。</li>
-</ul>
-<h3 id="1-6-客户端与服务端交互"><a href="#1-6-客户端与服务端交互" class="headerlink" title="1.6 客户端与服务端交互"></a>1.6 客户端与服务端交互</h3><h4 id="1-6-1-客户端"><a href="#1-6-1-客户端" class="headerlink" title="1.6.1 客户端"></a>1.6.1 客户端</h4><ul>
-<li>提交途径：<ol>
-<li>地址栏输入</li>
-<li>超链接（href，src）</li>
-<li>表单提交</li>
-</ol>
-</li>
-<li>提交方式：<ol>
-<li>get：地址栏输入、超链接（href，src），表单提交默认是get。</li>
-<li>post：表单提交可以设置成post。</li>
-</ol>
-</li>
-</ul>
-<h4 id="1-6-2-服务端"><a href="#1-6-2-服务端" class="headerlink" title="1.6.2 服务端"></a>1.6.2 服务端</h4><ul>
-<li>接受请求：<code>$_GET</code> <code>$_POST</code> 这两个变量得到的值都是一个关联数组，客户端的数据放在关联数组里面，我们要取数据，根据key去获取。</li>
-<li>处理请求：连接数据库，增删改查。</li>
-<li>响应数据：根据处理请求的逻辑，给客户端不同的响应结果。</li>
-</ul>
-<h4 id="1-6-3-文件上传"><a href="#1-6-3-文件上传" class="headerlink" title="1.6.3 文件上传"></a>1.6.3 文件上传</h4><ul>
-<li>客户端：<ol>
-<li>表单提交</li>
-<li>post方式提交</li>
-<li>必须有一个<code>input type=file</code></li>
-<li>必须给form 设置一个属性<code>enctype=&quot;multipart/form-data&quot;</code></li>
-</ol>
-</li>
-<li>服务端：<ol>
-<li>接收数据</li>
-<li><code>$_FILES</code>接收到的数据也是一个关联数组</li>
-</ol>
-</li>
-</ul>
-<h3 id="1-7-网络传输协议"><a href="#1-7-网络传输协议" class="headerlink" title="1.7 网络传输协议"></a>1.7 网络传输协议</h3><blockquote>
-<p>指服务器和客户端间进行通信时的约束和规范，客户端与服务端的数据交互并不是杂乱无章的，需要遵照（基于）一定的规范进行。</p>
-</blockquote>
-<ul>
-<li><p>常见协议：</p>
-<ol>
-<li>HTTP、HTTPS 超文本传输协议。</li>
-<li>FTP 文件传输协议。</li>
-<li>SMTP 简单邮件传输协议。</li>
-</ol>
-</li>
-<li><p>HTTP协议：</p>
-<blockquote>
-<p>即超文本传输协议，网站是基于HTTP协议的，例如网站的图片、CSS、JS等都是基于HTTP协议进行传输的。</p>
-<p>HTTP协议是由从客户机到服务器的请求(Request)和从服务器到客户机的响应(Response)进行了约束和规范。</p>
-<p>即HTTP协议主要由请求和响应构成。</p>
-</blockquote>
-<p>常用请求方法 POST、GET、PUT、DELETE。</p>
-<ul>
-<li><p><strong>请求/请求报文</strong>：请求由客户端发起，其规范格式为：请求首行、请求头、请求空行、请求体。</p>
-<ol>
-<li><p>请求首行：由请求方式、请求URL和协议版本构成。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">GET /work/code/01http/01get.html HTTP/1.1</div></pre></td></tr></table></figure>
-</li>
-<li><p>请求头：</p>
-<ul>
-<li><p>Host：localhost请求的主机。</p>
-</li>
-<li><p>Cache-Control：max-age=0控制缓存。</p>
-</li>
-<li><p>Accept：<em>/</em> 接受的文档MIME类型。</p>
-</li>
-<li><p><strong>User-Agent</strong>：告诉服务器客户端浏览器的版本，操作系统的版本。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Referer的头：告诉服务器请求来自于那个页面，广告流量统计，防盗链。</div></pre></td></tr></table></figure>
-</li>
-<li><p>Referer：从哪个URL跳转过来的。</p>
-</li>
-<li><p>Accept-Encoding：可接受的压缩格式。</p>
-</li>
-</ul>
-</li>
-<li><p>请求空行：分隔请求头和请求体。</p>
-</li>
-<li><p>请求体：即传递给服务端的数据。</p>
-</li>
-</ol>
-<p><strong>注</strong>：当以post形式提交表单的时候，请求头里会设置<code>Content-Type: application/x-www-form-urlencoded</code>，以get形式提交不需要。</p>
-</li>
-<li><p><strong>响应/响应报文</strong>：响应由服务器发出，其规范格式为：状态行、响应头、响应空行、响应主体。</p>
-<ol>
-<li><p>状态行：由协议版本号、状态码和状态信息构成。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">HTTP/1.1 200 OK</div></pre></td></tr></table></figure>
-<ul>
-<li>状态码：200（代表成功），403（代表没有权限），404（代表请求的资源没有找到），405（代表请求的方式不支持），302（请求重定向），304（文档未修改），500（代表服务器内部错误）。</li>
-</ul>
-</li>
-<li><p>响应头：</p>
-<ul>
-<li>Date：响应时间。</li>
-<li>Server：服务器信息。</li>
-<li>Last-Modified：文件的最后修改时间。</li>
-<li>Content-Length：响应主体长度。</li>
-<li>Content-Type：响应资源的MIME类型。（MIME是标识文件类型的，文件后缀并不能正确无误的标识文件的类型。）</li>
-</ul>
-<blockquote>
-<p>客户端与服务器在进行数据传输的时候都是以字节形式进行的，咱们可以理解成是以“文本形式”传输，这时浏览器就需要明确知道该怎么样来解析这些文本形式的数据，MIME就是明确告知浏览器该如何来处理。</p>
-</blockquote>
-</li>
-<li><p>响应空行：分隔响应头和响应体。</p>
-</li>
-<li><p>响应体：即服务端返回给客户端的内容。</p>
-</li>
-</ol>
-</li>
-</ul>
-</li>
-<li><p>调试工具：</p>
-<ol>
-<li>利用HTTP抓包工具在开发中可以帮我们进行调试，常用抓包工具：HttpWatch、Fiddler、Charles、FireBug等。</li>
-<li>浏览器插件：Firebug、HttpWatch、chrome dev tools。</li>
-<li>代理软件：Charles、Fiddler。</li>
-</ol>
-</li>
-</ul>
-<h2 id="二、AJAX编程"><a href="#二、AJAX编程" class="headerlink" title="二、AJAX编程"></a>二、AJAX编程</h2><blockquote>
-<p>即 Asynchronous Javascript And XML，AJAX 不是一门的新的语言，而是对现有持术的综合利用。</p>
-<p>本质是在HTTP协议的基础上以异步的方式与服务器进行通信。</p>
-</blockquote>
-<h3 id="2-1-同步-amp-异步"><a href="#2-1-同步-amp-异步" class="headerlink" title="2.1 同步&amp;异步"></a>2.1 同步&amp;异步</h3><ul>
-<li>异步：指某段程序执行时不会阻塞其它程序执行，其表现形式为程序的执行顺序不依赖程序本身的书写顺序，其优势在于不阻塞程序的执行，从而提升整体执行效率。反之则为同步。</li>
-<li>异步交互：客户端请求服务器，服务器接收到请求并处理请求，然后给客户端一个响应，响应的数据不会把原来的页面给覆盖，我们把这种交互成为异步交互。如果响应的数据把原来的页面给覆盖，则为同步交互。</li>
-</ul>
-<h3 id="2-2-XMLHttpRequest"><a href="#2-2-XMLHttpRequest" class="headerlink" title="2.2 XMLHttpRequest"></a>2.2 XMLHttpRequest</h3><blockquote>
-<p>浏览器内建对象，用于在后台与服务器通信(交换数据) ，由此我们便可实现对网页的部分更新，而不是刷新整个页面。</p>
-</blockquote>
-<h4 id="2-2-1-请求"><a href="#2-2-1-请求" class="headerlink" title="2.2.1 请求"></a>2.2.1 请求</h4><ul>
-<li><p>请求首行：</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">xhr.open('get','index.php');</div></pre></td></tr></table></figure>
-</li>
-<li><p>请求头：get请求可以不设置</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">xhr.setRequestHeader("Content-Type","text/html");</div></pre></td></tr></table></figure>
-</li>
-<li><p>请求主体：</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">xhr.send(null);</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<h4 id="2-2-2-响应"><a href="#2-2-2-响应" class="headerlink" title="2.2.2 响应"></a>2.2.2 响应</h4><blockquote>
-<p>HTTP响应是由服务端发出的，作为客户端更应关心的是响应的结果。</p>
-<p>由于服务器做出响应需要时间（比如网速慢等原因），所以我们需要监听服务器响应的状态，然后才能进行处理。</p>
-</blockquote>
-<p>onreadystatechange是Javascript的事件的一种，其意义在于监听XMLHttpRequest的状态。</p>
-<ul>
-<li><p>获取状态行（包括状态码&amp;状态信息）：</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">xhr.status			//状态码</div><div class="line">xhr.statusText		//状态信息</div></pre></td></tr></table></figure>
-</li>
-<li><p>获取响应头：</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">xhr.getResponseHeader('Content-Type');		//获取指定头信息</div><div class="line">xhr.getAllResponseHeaders();				//获取所有响应头信息</div></pre></td></tr></table></figure>
-</li>
-<li><p>响应主体：</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">xhr.responseText;</div><div class="line">xhr.responseXML;</div><div class="line"></div><div class="line">我们需要检测并判断响应头的MIME类型后确定使用request.responseText或者request.responseXML</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<h4 id="2-2-3-API"><a href="#2-2-3-API" class="headerlink" title="2.2.3 API"></a>2.2.3 API</h4><ul>
-<li>xhr.open() 发起请求，可以是get、post方式。</li>
-<li>xhr.setRequestHeader() 设置请求头。</li>
-<li>xhr.send() 发送请求主体get方式使用xhr.send(null)。</li>
-<li>xhr.onreadystatechange = function () {} 监听响应状态。</li>
-<li>xhr.status表示响应码，如200。</li>
-<li>xhr.statusText表示响应信息，如OK。</li>
-<li>xhr.getAllResponseHeaders() 获取全部响应头信息。</li>
-<li>xhr.getResponseHeader(‘key’) 获取指定头信息。</li>
-<li>xhr.responseText、xhr.responseXML都表示响应主体。</li>
-</ul>
-<h3 id="2-3-GET与POST的区别（面试中经常问到）"><a href="#2-3-GET与POST的区别（面试中经常问到）" class="headerlink" title="2.3 GET与POST的区别（面试中经常问到）"></a>2.3 GET与POST的区别（面试中经常问到）</h3><ul>
-<li>GET没有请求主体，使用xhr.send(null)。</li>
-<li>GET可以通过在请求URL上添加请求参数。</li>
-<li>POST可以通过xhr.send(‘name=itcast&amp;age=10’)。</li>
-<li>POST需要设置：<code>xhr.setRequestHeader(&quot;Content-Type&quot;,&quot;application/x-www-form-ullencoded&quot;);</code></li>
-<li>GET效率更好（应用多）。</li>
-<li>GET大小限制约4K，POST则没有限制。</li>
-</ul>
-<h3 id="2-4-XML"><a href="#2-4-XML" class="headerlink" title="2.4 XML"></a>2.4 XML</h3><blockquote>
-<p>XML是一种可扩展的标记语言，很类似HTML，其宗旨是用来传输数据，具有自我描述性（它里面的标签是自定义的）。</p>
-</blockquote>
-<h4 id="2-4-1-语法"><a href="#2-4-1-语法" class="headerlink" title="2.4.1 语法"></a>2.4.1 语法</h4><ul>
-<li><p>必须有且仅有一个根元素。</p>
-</li>
-<li><p>第一行必须是文档申明：</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="php"><span class="meta">&lt;?</span>xml version=<span class="string">"1.0"</span> encoding=<span class="string">"utf-8"</span> <span class="meta">?&gt;</span></span></div></pre></td></tr></table></figure>
-</li>
-<li><p>不可有空格、不可以数字或<code>.</code>开头、大小写敏感。</p>
-</li>
-<li><p>不可交叉嵌套。</p>
-</li>
-<li><p>属性双引号（浏览器自动修正成双引号了）。</p>
-</li>
-<li><p>特殊符号要使用实体。</p>
-</li>
-<li><p>注释和HTML一样。</p>
-</li>
-</ul>
-<blockquote>
-<p>虽然可以描述和传输复杂数据，但是其解析过于复杂并且体积较大，所以实现开发已经很少使用了。</p>
-</blockquote>
-<h4 id="2-4-2-示例"><a href="#2-4-2-示例" class="headerlink" title="2.4.2 示例"></a>2.4.2 示例</h4><h3 id="2-5-JSON"><a href="#2-5-JSON" class="headerlink" title="2.5 JSON"></a>2.5 JSON</h3><blockquote>
-<p>即 JavaScript Object Notation，另一种轻量级的文本数据交换格式，独立于语言。</p>
-</blockquote>
-<h4 id="2-5-1-语法"><a href="#2-5-1-语法" class="headerlink" title="2.5.1 语法"></a>2.5.1 语法</h4><ul>
-<li>数据在名称/值对中。</li>
-<li>数据由逗号分隔(最后一个健/值对不能带逗号)。</li>
-<li>花括号保存对象方括号保存数组。</li>
-<li>使用双引号。</li>
-</ul>
-<h4 id="2-5-2-json解析"><a href="#2-5-2-json解析" class="headerlink" title="2.5.2 json解析"></a>2.5.2 json解析</h4><blockquote>
-<p>JSON数据在不同语言进行传输时，类型为字符串，不同的语言各自也都对应有解析方法，需要解析完成后才能读取。</p>
-</blockquote>
-<ul>
-<li><strong>Javascript 解析方法</strong>：eavl()、JSON对象  JSON.parse()、JSON.stringify()；</li>
-<li><strong>PHP解析方法</strong>：json_encode()、json_decode()。</li>
-</ul>
-<blockquote>
-<p>总结：JSON体积小、解析方便且高效，在实际开发成为首选。</p>
-</blockquote>
-<h3 id="2-6-jQuery中的ajax"><a href="#2-6-jQuery中的ajax" class="headerlink" title="2.6 jQuery中的ajax"></a>2.6 jQuery中的ajax</h3><p><a href="http://www.w3school.com.cn/jquery/jquery_ref_ajax.asp" target="_blank" rel="external">jQuery ajax介绍</a></p>
-<blockquote>
-<p>jQuery为我们提供了更强大的Ajax封装：</p>
-</blockquote>
-<ul>
-<li>$.ajax({}) 可配置方式发起Ajax请求</li>
-<li>$.get() 以GET方式发起Ajax请求</li>
-<li>$.post() 以POST方式发起Ajax请求</li>
-<li>$(‘form’).serialize() 序列化表单（即格式化key=val&amp;key=val）</li>
-<li>url 接口地址</li>
-<li>type 请求方式</li>
-<li>timeout 请求超时</li>
-<li>dataType 服务器返回格式</li>
-<li>data 发送请求数据</li>
-<li>beforeSend: function () {} 请求发起前调用</li>
-<li>success 成功响应后调用</li>
-<li>error 错误响应时调用</li>
-<li>complete 响应完成时调用（包括成功和失败）</li>
-</ul>
-
-      
-
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
       
     </div>
     <div class="article-info article-info-index">
@@ -1145,223 +627,83 @@
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/03/14/HTTP服务&AJAX编程/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/03/14/JS高级与面向对象/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
 
-
-
-
-
-
-
-
   
-    <article id="post-Canvas" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
+<nav id="article-nav">
+  
+    <a href="/2017/03/14/regexp/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/03/14/Canvas/">Canvas</a>
-    </h1>
-  
-
+          正则
         
-        <a href="/2017/03/14/Canvas/" class="archive-article-date">
-  	<time datetime="2017-03-14T12:32:00.885Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-14</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="Canvas"><a href="#Canvas" class="headerlink" title="Canvas"></a>Canvas</h1><h3 id="一、初识canvas"><a href="#一、初识canvas" class="headerlink" title="一、初识canvas"></a>一、初识canvas</h3><ul>
-<li><p>canvas画布默认宽高是 300 * 150 px</p>
-</li>
-<li><p>canvas宽高要使用canvas标签的属性设置，不能使用css设置</p>
-</li>
-<li><p>绘图基本步骤：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 获取canvas画布</span></div><div class="line"><span class="keyword">var</span> cas = <span class="built_in">document</span>.getElementById(<span class="string">'cas'</span>);</div><div class="line"><span class="comment">// 获取绘图工具</span></div><div class="line"><span class="keyword">var</span> ctx = cas.getContext(<span class="string">'2d'</span>);</div><div class="line"><span class="comment">// 设置绘图起始位置</span></div><div class="line">ctx.moveTo(<span class="number">10</span>,<span class="number">10</span>);</div><div class="line"><span class="comment">// 绘制路径</span></div><div class="line">ctx.lineTo(<span class="number">100</span>,<span class="number">100</span>);</div><div class="line"><span class="comment">// 描边</span></div><div class="line">ctx.stroke();</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<h3 id="二、绘制图形"><a href="#二、绘制图形" class="headerlink" title="二、绘制图形"></a>二、绘制图形</h3><ul>
-<li><p>路径的绘制</p>
-<ul>
-<li>描边 stroke()</li>
-<li>填充 fill()</li>
-<li>既描边又填充 stroke() 和 fill()</li>
-</ul>
-</li>
-<li><p>绘制曲线</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">onload = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    <span class="keyword">var</span> cas = <span class="built_in">document</span>.getElementById(<span class="string">'cas'</span>);</div><div class="line">    <span class="keyword">var</span> ctx = cas.getContext(<span class="string">'2d'</span>);</div><div class="line">    </div><div class="line">    ctx.moveTo(<span class="number">0</span>,<span class="number">0</span>);</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; <span class="number">1000</span>; i++) &#123;</div><div class="line">        <span class="keyword">var</span> x = i;</div><div class="line">        <span class="keyword">var</span> y = <span class="built_in">Math</span>.sqrt(x);</div><div class="line">        ctx.lineTo(x,y)</div><div class="line">    &#125;</div><div class="line">    ctx.stroke();</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-</li>
-<li><p>手动闭合与closePath()闭合路径</p>
-<ul>
-<li>手动闭合，如果线的宽度比较大的话，会明显缺角，补上这个缺角可以多加一个点。</li>
-<li>closePath闭合路径可以省略最后一条线。</li>
-</ul>
-</li>
-<li><p>非零环绕原则：</p>
-<blockquote>
-<p>从闭合的区域中划出一条线，这条线经过的线条中，如果正向与反向的条数相等就不填充，否则就填充。</p>
-</blockquote>
-</li>
-<li><p>beginPath() 开启新的路径</p>
-</li>
-</ul>
-<h3 id="三、绘制图形样式设置"><a href="#三、绘制图形样式设置" class="headerlink" title="三、绘制图形样式设置"></a>三、绘制图形样式设置</h3><ul>
-<li>lineWidth 线宽，默认1px</li>
-<li>lineCap 线末端类型：(butt默认)、round、square </li>
-<li>lineJoin 相交线的拐点 miter(默认)、round、bevel</li>
-<li>strokeStyle 线的颜色</li>
-<li>fileStyle 填充颜色</li>
-<li>setLineDash() 设置虚线</li>
-<li>getLineDash() 获取虚线宽度集合</li>
-<li>lineDashOffset 设置虚线偏移量（负值向右偏移）</li>
-</ul>
-<h3 id="四、渐变色的绘制"><a href="#四、渐变色的绘制" class="headerlink" title="四、渐变色的绘制"></a>四、渐变色的绘制</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">onload = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    <span class="keyword">var</span> cas = <span class="built_in">document</span>.getElementById(<span class="string">'cas'</span>);</div><div class="line">    <span class="keyword">var</span> ctx = cas.getContext(<span class="string">'2d'</span>);</div><div class="line"></div><div class="line">    ctx.lineWidth = <span class="number">30</span>;</div><div class="line">    </div><div class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; <span class="number">255</span>; i++) &#123;</div><div class="line">        ctx.beginPath();</div><div class="line">        ctx.moveTo(<span class="number">100</span> + i,<span class="number">100</span>);	<span class="comment">//在beginPath的时候必须重新moveTo设置新的起点</span></div><div class="line">        ctx.strokeStyle = <span class="string">'rgb(0,'</span>+i+<span class="string">',0)'</span>;</div><div class="line">        ctx.lineTo(<span class="number">100</span> + i + <span class="number">1</span>,<span class="number">100</span>);</div><div class="line">        ctx.stroke();</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h3 id="五、save-和restore-的作用"><a href="#五、save-和restore-的作用" class="headerlink" title="五、save()和restore()的作用"></a>五、save()和restore()的作用</h3><ul>
-<li>save可以保存多个状态（用栈的方式存储：后进先出）</li>
-<li>restore可以恢复上次保存的状态</li>
-</ul>
-<h3 id="六、绘制矩形"><a href="#六、绘制矩形" class="headerlink" title="六、绘制矩形"></a>六、绘制矩形</h3><ul>
-<li><p>rect(x,y,w,h) 没有独立路径</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">ctx.rect(<span class="number">100</span>,<span class="number">100</span>,<span class="number">200</span>,<span class="number">200</span>);</div><div class="line">ctx.stroke();</div></pre></td></tr></table></figure>
-</li>
-<li><p>strokeRect(x,y,w,h) 有独立路径，不需要显式的进行描边操作，不影响别的绘制</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ctx.strokeRect(<span class="number">100</span>,<span class="number">100</span>,<span class="number">200</span>,<span class="number">200</span>);</div></pre></td></tr></table></figure>
-</li>
-<li><p>fillRect(x,y,w,h) 有独立路径，不需要显式的进行填充操作，不影响别的绘制</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ctx.fillRect(<span class="number">100</span>,<span class="number">100</span>,<span class="number">200</span>,<span class="number">100</span>);</div></pre></td></tr></table></figure>
-</li>
-<li><p>clearRect(x,y,w,h) 擦除矩形区域</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ctx.clearRect(<span class="number">0</span>,<span class="number">0</span>,cas.width,cas.height);	<span class="comment">//清空画布</span></div></pre></td></tr></table></figure>
-</li>
-</ul>
-<h3 id="七、绘制圆弧"><a href="#七、绘制圆弧" class="headerlink" title="七、绘制圆弧"></a>七、绘制圆弧</h3><ul>
-<li><p>弧度：1度等于<code>Math.PI/180</code>弧度。</p>
-</li>
-<li><p>角度转换为弧度：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">angleToRadian</span>(<span class="params">angle</span>)</span>&#123;</div><div class="line">    <span class="keyword">return</span> angle * <span class="built_in">Math</span>.PI/<span class="number">180</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-</li>
-<li><p>arc()</p>
-<ul>
-<li>x 圆心横坐标</li>
-<li>y 圆心纵坐标</li>
-<li>r 半径</li>
-<li>startAngle 开始角度</li>
-<li>endAngle 结束角度</li>
-<li>anticlockwise 是否逆时针方向绘制（默认false表示顺时针；true表示逆时针）</li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ctx.arc(<span class="number">100</span>,<span class="number">100</span>,<span class="number">100</span>,<span class="number">0</span>,angleToRadian(<span class="number">90</span>),<span class="literal">false</span>);</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<h3 id="八、逐帧动画"><a href="#八、逐帧动画" class="headerlink" title="八、逐帧动画"></a>八、逐帧动画</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line">onload = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    <span class="keyword">var</span> cas = <span class="built_in">document</span>.getElementById(<span class="string">'cas'</span>);</div><div class="line">    <span class="keyword">var</span> ctx = cas.getContext(<span class="string">'2d'</span>);</div><div class="line">    </div><div class="line">    <span class="keyword">var</span> xspeed = <span class="number">5</span>;</div><div class="line">    <span class="keyword">var</span> yspeed = <span class="number">5</span>;</div><div class="line">    <span class="keyword">var</span> x = <span class="number">0</span>;</div><div class="line">    <span class="keyword">var</span> y = <span class="number">0</span>;</div><div class="line">    <span class="keyword">var</span> xDirection = <span class="number">1</span>;</div><div class="line">    <span class="keyword">var</span> yDirection = <span class="number">1</span>;</div><div class="line"></div><div class="line">    <span class="comment">// 逐帧动画（序列帧动画）</span></div><div class="line">    setInterval(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">        <span class="comment">// 清空画布</span></div><div class="line">        ctx.clearRect(<span class="number">0</span>,<span class="number">0</span>,cas.width,cas.height);</div><div class="line">        <span class="keyword">if</span>(x &lt; <span class="number">0</span> || x &gt; cas.width - <span class="number">200</span>)&#123;</div><div class="line">            xDirection = -xDirection;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">if</span>(y &lt; <span class="number">0</span> || y &gt; cas.height - <span class="number">100</span>)&#123;</div><div class="line">            yDirection = -yDirection;</div><div class="line">        &#125;</div><div class="line">        x = x + xspeed * xDirection;</div><div class="line">        y = y + yspeed * yDirection;</div><div class="line">        ctx.fillRect(x,y,<span class="number">200</span>,<span class="number">100</span>);</div><div class="line">    &#125;,<span class="number">100</span>);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h3 id="九、绘制文本"><a href="#九、绘制文本" class="headerlink" title="九、绘制文本"></a>九、绘制文本</h3><ul>
-<li><p>font：设置字体样式</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ctx.font = <span class="string">'20px 微软雅黑'</span>;</div></pre></td></tr></table></figure>
-</li>
-<li><p>strokeText()</p>
-</li>
-<li><p>fillText(text,x,y,maxWidth)</p>
-<ul>
-<li>text 要绘制的文本</li>
-<li>x,y 文本绘制的坐标（文本左下角）</li>
-<li>maxWidth 设置文本最大宽度，可选参数</li>
-</ul>
-</li>
-<li><p>ctx.textAlign文本水平对齐方式，相对绘制坐标来说的</p>
-<ul>
-<li>left</li>
-<li>center</li>
-<li>right</li>
-<li>start 默认</li>
-<li>end</li>
-<li>direction属性css(rtl ltr) start和end于此相关<ul>
-<li>如果是ltr,start和left表现一致</li>
-<li>如果是rtl,start和right表现一致</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>ctx.textBaseline 设置基线（垂直对齐方式 ）</p>
-<ul>
-<li>top 文本的基线处于文本的正上方，并且有一段距离</li>
-<li>middle 文本的基线处于文本的正中间</li>
-<li>bottom 文本的基线处于文本的证下发，并且有一段距离</li>
-<li>hanging 文本的基线处于文本的正上方，并且和文本粘合</li>
-<li>alphabetic 默认值，基线处于文本的下方，并且穿过文字</li>
-<li>ideographic 和bottom相似，但是不一样</li>
-</ul>
-</li>
-<li><p>measureText() 获取文本宽度obj.width</p>
-</li>
-</ul>
-<h3 id="十、绘制图片"><a href="#十、绘制图片" class="headerlink" title="十、绘制图片"></a>十、绘制图片</h3><ul>
-<li>三个参数drawImage(img,x,y)<ul>
-<li>img 图片对象、canvas对象、video对象</li>
-<li>x,y 图片绘制的左上角</li>
-</ul>
-</li>
-<li>五个参数drawImage(img,x,y,w,h)<ul>
-<li>img 图片对象、canvas对象、video对象</li>
-<li>x,y 图片绘制的左上角</li>
-<li>w,h 图片绘制尺寸设置(图片缩放，不是截取)</li>
-</ul>
-</li>
-<li>九个参数drawImage(img,x,y,w,h,x1,y1,w1,h1)<ul>
-<li>img 图片对象、canvas对象、video对象</li>
-<li>x,y,w,h 图片中的一个矩形区域</li>
-<li>x1,y1,w1,h1 画布中的一个矩形区域</li>
-</ul>
-</li>
-</ul>
-<h3 id="十一、变换"><a href="#十一、变换" class="headerlink" title="十一、变换"></a>十一、变换</h3><ul>
-<li>平移 移动画布的原点<ul>
-<li>translate(x,y) 参数表示移动目标点的坐标</li>
-</ul>
-</li>
-<li>旋转<ul>
-<li>scale(x,y) 参数表示宽高的缩放比例</li>
-</ul>
-</li>
-<li>缩放<ul>
-<li>rotate(angle) 参数表示旋转角度</li>
-</ul>
-</li>
-</ul>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/03/14/Canvas/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
+      </div>
+    </a>
+  
+  
+    <a href="/2017/03/14/HTTP服务&AJAX编程/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">HTTP服务&amp;AJAX编程</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
 
 
 
@@ -1369,7 +711,10 @@
 
 
   
+    <div class="duoshuo"></div>
   
+
+
 
 
           </div>
@@ -1391,8 +736,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
