@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <meta name="description" content="title: Canvas一、初识canvas
+canvas画布默认宽高是 300 * 150 px
+
+canvas宽高要使用canvas标签的属性设置，不能使用css设置
+
+绘图基本步骤：
+12345678910// 获取canvas画布var cas = document.getElementB" />
+  
+
+  
+  
+  
+  
+  
+  
+  <title>柴米油盐</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="title: Canvas一、初识canvas
+canvas画布默认宽高是 300 * 150 px
+
+canvas宽高要使用canvas标签的属性设置，不能使用css设置
+
+绘图基本步骤：
+12345678910// 获取canvas画布var cas = document.getElementById(&apos;cas&apos;);// 获取绘图工具var ctx = cas.getContext(&apos;2d&apos;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="柴米油盐">
+<meta property="og:url" content="http://yoursite.com/2016/09/12/Canvas/index.html">
+<meta property="og:site_name" content="柴米油盐">
+<meta property="og:description" content="title: Canvas一、初识canvas
+canvas画布默认宽高是 300 * 150 px
+
+canvas宽高要使用canvas标签的属性设置，不能使用css设置
+
+绘图基本步骤：
+12345678910// 获取canvas画布var cas = document.getElementById(&apos;cas&apos;);// 获取绘图工具var ctx = cas.getContext(&apos;2d&apos;">
+<meta property="og:updated_time" content="2017-03-14T13:39:29.734Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="柴米油盐">
+<meta name="twitter:description" content="title: Canvas一、初识canvas
+canvas画布默认宽高是 300 * 150 px
+
+canvas宽高要使用canvas标签的属性设置，不能使用css设置
+
+绘图基本步骤：
+12345678910// 获取canvas画布var cas = document.getElementById(&apos;cas&apos;);// 获取绘图工具var ctx = cas.getContext(&apos;2d&apos;">
+  
+  
+    <link rel="icon" href="/css/images/favicon.ico">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+  
+  <!-- baidu webmaster push -->
+  <script src='//push.zhanzhang.baidu.com/push.js'></script>
+</head>
+<body class="home blog custom-background custom-font-enabled single-author">
+  <div id="page" class="hfeed site">
+      <header id="masthead" class="site-header" role="banner">
+    <hgroup>
+      <h1 class="site-title">
+        <a href="/" title="柴米油盐" rel="home">柴米油盐</a>
+      </h1>
+      
+        <script type="text/javascript" src="http://api.hitokoto.us/rand?encode=js&charset=utf-8"></script>
+        <h2 class="site-description"><script>hitokoto();</script></h2>
+      
+    </hgroup>
+
+    <nav id="site-navigation" class="main-navigation" role="navigation">
+            <button class="menu-toggle">菜单</button>
+            <a class="assistive-text" href="/#content" title="跳至内容">跳至内容</a><!--TODO-->
+            <div class="menu-main-container">
+                <ul id="menu-main" class="nav-menu">
+                
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/">Home</a></li>
+                
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/archives">Archives</a></li>
+                
+                </ul>
+            </div>
+    </nav>
+</header>
+      <div id="main" class="wrapper">
+        <div id="primary" class="site-content"><div id="content" role="main"><article id="post-Canvas" class="post-Canvas post type-post status-publish format-standard hentry">
+    <!---->
+
+      <header class="entry-header">
+        
+        <div class="comments-link">
+            
+            <a href="javascript:void(0);" data-url="http://yoursite.com/2016/09/12/Canvas/" data-id="cj0yo58g70000t4lpvv4kt3y8" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+        </div><!-- .comments-link -->
+      </header><!-- .entry-header -->
+
+    <div class="entry-content">
+      
+        <hr>
+<h2 id="title-Canvas"><a href="#title-Canvas" class="headerlink" title="title: Canvas"></a>title: Canvas</h2><h3 id="一、初识canvas"><a href="#一、初识canvas" class="headerlink" title="一、初识canvas"></a>一、初识canvas</h3><ul>
+<li><p>canvas画布默认宽高是 300 * 150 px</p>
+</li>
+<li><p>canvas宽高要使用canvas标签的属性设置，不能使用css设置</p>
+</li>
+<li><p>绘图基本步骤：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 获取canvas画布</span></div><div class="line"><span class="keyword">var</span> cas = <span class="built_in">document</span>.getElementById(<span class="string">'cas'</span>);</div><div class="line"><span class="comment">// 获取绘图工具</span></div><div class="line"><span class="keyword">var</span> ctx = cas.getContext(<span class="string">'2d'</span>);</div><div class="line"><span class="comment">// 设置绘图起始位置</span></div><div class="line">ctx.moveTo(<span class="number">10</span>,<span class="number">10</span>);</div><div class="line"><span class="comment">// 绘制路径</span></div><div class="line">ctx.lineTo(<span class="number">100</span>,<span class="number">100</span>);</div><div class="line"><span class="comment">// 描边</span></div><div class="line">ctx.stroke();</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="二、绘制图形"><a href="#二、绘制图形" class="headerlink" title="二、绘制图形"></a>二、绘制图形</h3><ul>
+<li><p>路径的绘制</p>
+<ul>
+<li>描边 stroke()</li>
+<li>填充 fill()</li>
+<li>既描边又填充 stroke() 和 fill()</li>
+</ul>
+</li>
+<li><p>绘制曲线</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">onload = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    <span class="keyword">var</span> cas = <span class="built_in">document</span>.getElementById(<span class="string">'cas'</span>);</div><div class="line">    <span class="keyword">var</span> ctx = cas.getContext(<span class="string">'2d'</span>);</div><div class="line">    </div><div class="line">    ctx.moveTo(<span class="number">0</span>,<span class="number">0</span>);</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; <span class="number">1000</span>; i++) &#123;</div><div class="line">        <span class="keyword">var</span> x = i;</div><div class="line">        <span class="keyword">var</span> y = <span class="built_in">Math</span>.sqrt(x);</div><div class="line">        ctx.lineTo(x,y)</div><div class="line">    &#125;</div><div class="line">    ctx.stroke();</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>手动闭合与closePath()闭合路径</p>
+<ul>
+<li>手动闭合，如果线的宽度比较大的话，会明显缺角，补上这个缺角可以多加一个点。</li>
+<li>closePath闭合路径可以省略最后一条线。</li>
+</ul>
+</li>
+<li><p>非零环绕原则：</p>
+<blockquote>
+<p>从闭合的区域中划出一条线，这条线经过的线条中，如果正向与反向的条数相等就不填充，否则就填充。</p>
+</blockquote>
+</li>
+<li><p>beginPath() 开启新的路径</p>
+</li>
+</ul>
+<h3 id="三、绘制图形样式设置"><a href="#三、绘制图形样式设置" class="headerlink" title="三、绘制图形样式设置"></a>三、绘制图形样式设置</h3><ul>
+<li>lineWidth 线宽，默认1px</li>
+<li>lineCap 线末端类型：(butt默认)、round、square </li>
+<li>lineJoin 相交线的拐点 miter(默认)、round、bevel</li>
+<li>strokeStyle 线的颜色</li>
+<li>fileStyle 填充颜色</li>
+<li>setLineDash() 设置虚线</li>
+<li>getLineDash() 获取虚线宽度集合</li>
+<li>lineDashOffset 设置虚线偏移量（负值向右偏移）</li>
+</ul>
+<h3 id="四、渐变色的绘制"><a href="#四、渐变色的绘制" class="headerlink" title="四、渐变色的绘制"></a>四、渐变色的绘制</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">onload = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    <span class="keyword">var</span> cas = <span class="built_in">document</span>.getElementById(<span class="string">'cas'</span>);</div><div class="line">    <span class="keyword">var</span> ctx = cas.getContext(<span class="string">'2d'</span>);</div><div class="line"></div><div class="line">    ctx.lineWidth = <span class="number">30</span>;</div><div class="line">    </div><div class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; <span class="number">255</span>; i++) &#123;</div><div class="line">        ctx.beginPath();</div><div class="line">        ctx.moveTo(<span class="number">100</span> + i,<span class="number">100</span>);	<span class="comment">//在beginPath的时候必须重新moveTo设置新的起点</span></div><div class="line">        ctx.strokeStyle = <span class="string">'rgb(0,'</span>+i+<span class="string">',0)'</span>;</div><div class="line">        ctx.lineTo(<span class="number">100</span> + i + <span class="number">1</span>,<span class="number">100</span>);</div><div class="line">        ctx.stroke();</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="五、save-和restore-的作用"><a href="#五、save-和restore-的作用" class="headerlink" title="五、save()和restore()的作用"></a>五、save()和restore()的作用</h3><ul>
+<li>save可以保存多个状态（用栈的方式存储：后进先出）</li>
+<li>restore可以恢复上次保存的状态</li>
+</ul>
+<h3 id="六、绘制矩形"><a href="#六、绘制矩形" class="headerlink" title="六、绘制矩形"></a>六、绘制矩形</h3><ul>
+<li><p>rect(x,y,w,h) 没有独立路径</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">ctx.rect(<span class="number">100</span>,<span class="number">100</span>,<span class="number">200</span>,<span class="number">200</span>);</div><div class="line">ctx.stroke();</div></pre></td></tr></table></figure>
+</li>
+<li><p>strokeRect(x,y,w,h) 有独立路径，不需要显式的进行描边操作，不影响别的绘制</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ctx.strokeRect(<span class="number">100</span>,<span class="number">100</span>,<span class="number">200</span>,<span class="number">200</span>);</div></pre></td></tr></table></figure>
+</li>
+<li><p>fillRect(x,y,w,h) 有独立路径，不需要显式的进行填充操作，不影响别的绘制</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ctx.fillRect(<span class="number">100</span>,<span class="number">100</span>,<span class="number">200</span>,<span class="number">100</span>);</div></pre></td></tr></table></figure>
+</li>
+<li><p>clearRect(x,y,w,h) 擦除矩形区域</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ctx.clearRect(<span class="number">0</span>,<span class="number">0</span>,cas.width,cas.height);	<span class="comment">//清空画布</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="七、绘制圆弧"><a href="#七、绘制圆弧" class="headerlink" title="七、绘制圆弧"></a>七、绘制圆弧</h3><ul>
+<li><p>弧度：1度等于<code>Math.PI/180</code>弧度。</p>
+</li>
+<li><p>角度转换为弧度：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">angleToRadian</span>(<span class="params">angle</span>)</span>&#123;</div><div class="line">    <span class="keyword">return</span> angle * <span class="built_in">Math</span>.PI/<span class="number">180</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>arc()</p>
+<ul>
+<li>x 圆心横坐标</li>
+<li>y 圆心纵坐标</li>
+<li>r 半径</li>
+<li>startAngle 开始角度</li>
+<li>endAngle 结束角度</li>
+<li>anticlockwise 是否逆时针方向绘制（默认false表示顺时针；true表示逆时针）</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ctx.arc(<span class="number">100</span>,<span class="number">100</span>,<span class="number">100</span>,<span class="number">0</span>,angleToRadian(<span class="number">90</span>),<span class="literal">false</span>);</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="八、逐帧动画"><a href="#八、逐帧动画" class="headerlink" title="八、逐帧动画"></a>八、逐帧动画</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line">onload = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    <span class="keyword">var</span> cas = <span class="built_in">document</span>.getElementById(<span class="string">'cas'</span>);</div><div class="line">    <span class="keyword">var</span> ctx = cas.getContext(<span class="string">'2d'</span>);</div><div class="line">    </div><div class="line">    <span class="keyword">var</span> xspeed = <span class="number">5</span>;</div><div class="line">    <span class="keyword">var</span> yspeed = <span class="number">5</span>;</div><div class="line">    <span class="keyword">var</span> x = <span class="number">0</span>;</div><div class="line">    <span class="keyword">var</span> y = <span class="number">0</span>;</div><div class="line">    <span class="keyword">var</span> xDirection = <span class="number">1</span>;</div><div class="line">    <span class="keyword">var</span> yDirection = <span class="number">1</span>;</div><div class="line"></div><div class="line">    <span class="comment">// 逐帧动画（序列帧动画）</span></div><div class="line">    setInterval(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">        <span class="comment">// 清空画布</span></div><div class="line">        ctx.clearRect(<span class="number">0</span>,<span class="number">0</span>,cas.width,cas.height);</div><div class="line">        <span class="keyword">if</span>(x &lt; <span class="number">0</span> || x &gt; cas.width - <span class="number">200</span>)&#123;</div><div class="line">            xDirection = -xDirection;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">if</span>(y &lt; <span class="number">0</span> || y &gt; cas.height - <span class="number">100</span>)&#123;</div><div class="line">            yDirection = -yDirection;</div><div class="line">        &#125;</div><div class="line">        x = x + xspeed * xDirection;</div><div class="line">        y = y + yspeed * yDirection;</div><div class="line">        ctx.fillRect(x,y,<span class="number">200</span>,<span class="number">100</span>);</div><div class="line">    &#125;,<span class="number">100</span>);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="九、绘制文本"><a href="#九、绘制文本" class="headerlink" title="九、绘制文本"></a>九、绘制文本</h3><ul>
+<li><p>font：设置字体样式</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ctx.font = <span class="string">'20px 微软雅黑'</span>;</div></pre></td></tr></table></figure>
+</li>
+<li><p>strokeText()</p>
+</li>
+<li><p>fillText(text,x,y,maxWidth)</p>
+<ul>
+<li>text 要绘制的文本</li>
+<li>x,y 文本绘制的坐标（文本左下角）</li>
+<li>maxWidth 设置文本最大宽度，可选参数</li>
+</ul>
+</li>
+<li><p>ctx.textAlign文本水平对齐方式，相对绘制坐标来说的</p>
+<ul>
+<li>left</li>
+<li>center</li>
+<li>right</li>
+<li>start 默认</li>
+<li>end</li>
+<li>direction属性css(rtl ltr) start和end于此相关<ul>
+<li>如果是ltr,start和left表现一致</li>
+<li>如果是rtl,start和right表现一致</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>ctx.textBaseline 设置基线（垂直对齐方式 ）</p>
+<ul>
+<li>top 文本的基线处于文本的正上方，并且有一段距离</li>
+<li>middle 文本的基线处于文本的正中间</li>
+<li>bottom 文本的基线处于文本的证下发，并且有一段距离</li>
+<li>hanging 文本的基线处于文本的正上方，并且和文本粘合</li>
+<li>alphabetic 默认值，基线处于文本的下方，并且穿过文字</li>
+<li>ideographic 和bottom相似，但是不一样</li>
+</ul>
+</li>
+<li><p>measureText() 获取文本宽度obj.width</p>
+</li>
+</ul>
+<h3 id="十、绘制图片"><a href="#十、绘制图片" class="headerlink" title="十、绘制图片"></a>十、绘制图片</h3><ul>
+<li>三个参数drawImage(img,x,y)<ul>
+<li>img 图片对象、canvas对象、video对象</li>
+<li>x,y 图片绘制的左上角</li>
+</ul>
+</li>
+<li>五个参数drawImage(img,x,y,w,h)<ul>
+<li>img 图片对象、canvas对象、video对象</li>
+<li>x,y 图片绘制的左上角</li>
+<li>w,h 图片绘制尺寸设置(图片缩放，不是截取)</li>
+</ul>
+</li>
+<li>九个参数drawImage(img,x,y,w,h,x1,y1,w1,h1)<ul>
+<li>img 图片对象、canvas对象、video对象</li>
+<li>x,y,w,h 图片中的一个矩形区域</li>
+<li>x1,y1,w1,h1 画布中的一个矩形区域</li>
+</ul>
+</li>
+</ul>
+<h3 id="十一、变换"><a href="#十一、变换" class="headerlink" title="十一、变换"></a>十一、变换</h3><ul>
+<li>平移 移动画布的原点<ul>
+<li>translate(x,y) 参数表示移动目标点的坐标</li>
+</ul>
+</li>
+<li>旋转<ul>
+<li>scale(x,y) 参数表示宽高的缩放比例</li>
+</ul>
+</li>
+<li>缩放<ul>
+<li>rotate(angle) 参数表示旋转角度</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div><!-- .entry-content -->
+
+    <footer class="entry-meta">
+    <a href="/2016/09/12/Canvas/">
+    <time datetime="2016-09-11T16:00:00.000Z" class="entry-date">
+        2016-09-12
+    </time>
+</a>
+    
+    
+    </footer>
+</article>
+
+
+    
+<nav class="nav-single">
+    <h3 class="assistive-text">文章导航</h3>
+    
+        <span class="nav-previous"><a href="/2017/03/14/HTTP服务&AJAX编程/" rel="prev"><span class="meta-nav">←</span> HTTP服务&amp;AJAX编程</a></span>
+    
+    
+</nav><!-- .nav-single -->
+
+
+
+
+
+
+
+</div></div>
+        <div id="secondary" class="widget-area" role="complementary">
+  
+    <aside id="search" class="widget widget_search"><form role="search" method="get" accept-charset="utf-8" id="searchform" class="searchform" action="//google.com/search">
+    <div>
+        <input type="text" value="" name="s" id="s" />
+        <input type="submit" id="searchsubmit" value="搜索" />
+    </div>
+</form></aside>
+  
+    
+  
+    
+  
+    
+  <aside class="widget">
+    <h3 class="widget-title">Recents</h3>
+    <div class="widget-content">
+      <ul>
+        
+          <li>
+            <a href="/2017/03/14/regexp/">正则</a>
+          </li>
+        
+          <li>
+            <a href="/2017/03/14/JS高级与面向对象/">JS高级与面向对象</a>
+          </li>
+        
+          <li>
+            <a href="/2017/03/14/HTTP服务&AJAX编程/">HTTP服务&amp;AJAX编程</a>
+          </li>
+        
+          <li>
+            <a href="/2016/09/12/Canvas/">(no title)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </aside>
+
+  
+    
+  
+    
+  
+</div>
+      </div>
+      <footer id="colophon" role="contentinfo">
+    <p>&copy; 2017 柴米油盐
+    All rights reserved.</p>
+    <p>Powered by <a href="http://hexo.io/" target="_blank">Hexo</a></p>
+</footer>
+    <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"1","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+<script src="/js/navigation.js"></script>
+
+<div id="bg"></div>
+
+  </div>
+</body>
+</html>
