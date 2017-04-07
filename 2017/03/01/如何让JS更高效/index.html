@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <meta name="description" content="前端的学习经历" />
+  
+
+  
+  
+  
+  
+  
+  
+  <title>网页的优化 | 柴米油盐</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="网页的优化
+从三方面来写
+ECMAscript
+
+避免使用 eval 或 Function 构造器
+改写 eval
+如果你需要函数，使用 function
+不要使用 with
+不要在要求性能的函数中使用 try-catch-finally
+隔离 eval 和 with 的使用
+尽量不用全局变量
+注意对象的隐式换
+在要求性能的函数中避免使用 for-in
+使用累加形式连接字符串
+基本运算比调用函数更">
+<meta property="og:type" content="article">
+<meta property="og:title" content="网页的优化">
+<meta property="og:url" content="https://qq471097828.github.io/2017/03/01/如何让JS更高效/index.html">
+<meta property="og:site_name" content="柴米油盐">
+<meta property="og:description" content="网页的优化
+从三方面来写
+ECMAscript
+
+避免使用 eval 或 Function 构造器
+改写 eval
+如果你需要函数，使用 function
+不要使用 with
+不要在要求性能的函数中使用 try-catch-finally
+隔离 eval 和 with 的使用
+尽量不用全局变量
+注意对象的隐式换
+在要求性能的函数中避免使用 for-in
+使用累加形式连接字符串
+基本运算比调用函数更">
+<meta property="og:updated_time" content="2017-04-07T09:02:41.046Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="网页的优化">
+<meta name="twitter:description" content="网页的优化
+从三方面来写
+ECMAscript
+
+避免使用 eval 或 Function 构造器
+改写 eval
+如果你需要函数，使用 function
+不要使用 with
+不要在要求性能的函数中使用 try-catch-finally
+隔离 eval 和 with 的使用
+尽量不用全局变量
+注意对象的隐式换
+在要求性能的函数中避免使用 for-in
+使用累加形式连接字符串
+基本运算比调用函数更">
+  
+  
+    <link rel="icon" href="/css/images/favicon.ico">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+  
+  <!-- baidu webmaster push -->
+  <script src='//push.zhanzhang.baidu.com/push.js'></script>
+</head>
+<body class="home blog custom-background custom-font-enabled single-author">
+  <div id="page" class="hfeed site">
+      <header id="masthead" class="site-header" role="banner">
+    <hgroup>
+      <h1 class="site-title">
+        <a href="/" title="柴米油盐" rel="home">柴米油盐</a>
+      </h1>
+      
+        <h2 class="site-description">
+          <a href="/" id="subtitle">我居然是一个前端--哈哈</a>
+        </h2>
+      
+    </hgroup>
+
+    <nav id="site-navigation" class="main-navigation" role="navigation">
+            <button class="menu-toggle">菜单</button>
+            <a class="assistive-text" href="/#content" title="跳至内容">跳至内容</a><!--TODO-->
+            <div class="menu-main-container">
+                <ul id="menu-main" class="nav-menu">
+                
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/">主页</a></li>
+                
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/archives">查看文章</a></li>
+                
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/resume/index.html">简历</a></li>
+                
+                </ul>
+            </div>
+    </nav>
+</header>
+      <div id="main" class="wrapper">
+        <div id="primary" class="site-content"><div id="content" role="main"><article id="post-如何让JS更高效" class="post-如何让JS更高效 post type-post status-publish format-standard hentry">
+    <!---->
+
+      <header class="entry-header">
+        
+        
+  
+    <h1 class="entry-title article-title">
+      网页的优化
+    </h1>
+  
+
+        
+        <div class="comments-link">
+            
+            <a href="javascript:void(0);" data-url="https://qq471097828.github.io/2017/03/01/如何让JS更高效/" data-id="cj17m3vx800000olp220fbt3a" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+        </div><!-- .comments-link -->
+      </header><!-- .entry-header -->
+
+    <div class="entry-content">
+      
+        <h1 id="网页的优化"><a href="#网页的优化" class="headerlink" title="网页的优化"></a>网页的优化</h1><hr>
+<h2 id="从三方面来写"><a href="#从三方面来写" class="headerlink" title="从三方面来写"></a>从三方面来写</h2><ol>
+<li><p>ECMAscript</p>
+<blockquote>
+<pre><code>避免使用 eval 或 Function 构造器
+改写 eval
+如果你需要函数，使用 function
+不要使用 with
+不要在要求性能的函数中使用 try-catch-finally
+隔离 eval 和 with 的使用
+尽量不用全局变量
+注意对象的隐式换
+在要求性能的函数中避免使用 for-in
+使用累加形式连接字符串
+基本运算比调用函数更快
+为 setTimeout() 和 setInterval() 传入函数而不是字符串
+</code></pre></blockquote>
+</li>
+<li><p>DOM</p>
+<blockquote>
+<pre><code>重绘和重排
+将重排数量降到最低
+最小重排
+修改文档树
+修改不可见的元素
+测量
+一次改变多项样式
+平滑度换速度
+避免检索大量节点
+通过 XPath 提升速度
+避免在遍历 DOM 的时候进行修改
+在脚本中用变量缓存 DOM 的值
+</code></pre></blockquote>
+</li>
+<li><p>文档加载</p>
+<blockquote>
+<pre><code>避免在多个文档间保持同一个引用
+快速历史导航
+使用 XMLHttpRequest
+动态创建 &lt;script&gt; 元素
+location.replace() 控制历史记录
+</code></pre></blockquote>
+</li>
+</ol>
+<hr>
+<h2 id="提高网页打开的速度"><a href="#提高网页打开的速度" class="headerlink" title="提高网页打开的速度"></a>提高网页打开的速度</h2><ul>
+<li>让网更加的便于SEO可以参考：雅虎13条<blockquote>
+<pre><code>1.减少http请求
+2.减少多媒体，图片，声音的使用，传输以文字内容为先
+3.用截止时间报头，由于时间是将来，对于缓存来说，可以减少部分http请求
+4.支持Gzip
+5.把CSS放在网页的顶部
+6.活动的脚本文件放在底部
+7.避免用CSS Expressions
+8.把JavaScript和CSS单独化，与网页分离
+9.减小DNS查表时间
+10.最小化JavaScript
+11.避免网页的转向
+12.删除重复的脚本
+13.配置Etags(注：etags就是emacs的建表程式)
+</code></pre></blockquote>
+</li>
+</ul>
+<hr>
+<h2 id="便于网站的SEO的方法："><a href="#便于网站的SEO的方法：" class="headerlink" title="便于网站的SEO的方法："></a>便于网站的SEO的方法：</h2><ul>
+<li>SEO有一条不变的准则就是它永远都在变，因为没有一沉不变的优化方案可供大家套用，（此处只是我自己的想法总结）</li>
+<li>前端的工作主要是负责页面的HTML+CSS+JS，优化好这几个方面会为SEO工作打好一个坚实的基础。突出重要内容可以让搜索引擎判断当前页面的重点是什么，提升网站访问速度可以让搜索引擎的蜘蛛顺利、快速、大量的抓取网页内容，所以以下我就着重<strong>以突出重要内容</strong>和<strong>提升网站速度</strong>为主来总结一下。</li>
+</ul>
+<ol>
+<li>html中的标签<blockquote>
+<pre><code>title：只强调重点即可，重要关键词出现不要超过2次，而且要靠前，每个页面title要有所不同
+</code></pre></blockquote>
+</li>
+</ol>
+<blockquote>
+<pre><code>description：把网页内容高度概括到这里，长度要合理，不可过分堆砌关键词，每个页面description要有所不同
+
+keywords：列举出几个重要关键词即可，也不可过分堆砌
+
+语义化书写HTML代码，符合W3C标准。
+
+利用布局，把重要内容HTML代码放在最前。（搜索引擎抓取HTML内容是从上到下，利用这一特点，可以让主要代码优先读取）
+
+重要内容不要用JS输出。蜘蛛不会读取JS里的内容，所以重要内容必须放在HTML里
+
+尽少使用iframe框架。搜索引擎不会抓取到iframe里的内容，重要内容不要放在框架中。
+
+为图片加上alt属性，需要强调的地方可以加上title属性。
+</code></pre></blockquote>
+<ol>
+<li>CSS中：</li>
+</ol>
+<blockquote>
+<pre><code>利用CSS截取字符。如果文字长度过长，可以用样式截取，设置高度，超出的部分隐藏即可。这样做的好处是让文字完整呈现给搜索引擎，同时在表现上也保证了美观。
+
+尽量外链CSS和JS，保证网页代码的整洁，也有利于日后维护。
+
+CSS放在文件头部，JS放在文件尾部，可使用工具对CSS和JS文件进行压缩。
+
+CSS Sprites雪碧图（精灵图）
+</code></pre></blockquote>
+<ol>
+<li>JS的优化参照上边，和网页提升速度参照雅虎13条</li>
+</ol>
+
+      
+    </div><!-- .entry-content -->
+
+    <footer class="entry-meta">
+    <a href="/2017/03/01/如何让JS更高效/">
+    <time datetime="2017-02-28T16:00:00.000Z" class="entry-date">
+        2017-03-01
+    </time>
+</a>
+    
+    
+    </footer>
+</article>
+
+
+    
+<nav class="nav-single">
+    <h3 class="assistive-text">文章导航</h3>
+    
+        <span class="nav-previous"><a href="/2017/03/01/移动web开发中的常见问题/" rel="prev"><span class="meta-nav">←</span> 移动web开发中的常见问题</a></span>
+    
+    
+        <span class="nav-next"><a href="/2016/12/01/前端的工具/" rel="next">前端的工具 <span class="meta-nav">→</span></a></span>
+    
+</nav><!-- .nav-single -->
+
+
+
+
+
+
+
+</div></div>
+        <div id="secondary" class="widget-area" role="complementary">
+  
+    
+  
+    
+  
+    
+  <aside class="widget">
+    <h3 class="widget-title">Music</h3>
+    <div class="widget-content">
+      <audio src="/music/bird-in-tree.mp3" controls="controls"
+             style="width:100%">
+        您的浏览器不支持 audio 标签。
+      </audio>
+    </div>
+  </aside>
+
+  
+    
+  <aside class="widget">
+    <h3 class="widget-title">Recents</h3>
+    <div class="widget-content">
+      <ul>
+        
+          <li>
+            <a href="/2017/03/01/移动web开发中的常见问题/">移动web开发中的常见问题</a>
+          </li>
+        
+          <li>
+            <a href="/2017/03/01/如何让JS更高效/">网页的优化</a>
+          </li>
+        
+          <li>
+            <a href="/2016/12/01/前端的工具/">前端的工具</a>
+          </li>
+        
+          <li>
+            <a href="/2016/10/01/regexp/">正则</a>
+          </li>
+        
+          <li>
+            <a href="/2016/09/10/H5知识总结/">HTML5</a>
+          </li>
+        
+      </ul>
+    </div>
+  </aside>
+
+  
+    
+  <aside class="widget">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget-content">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">三月 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">十二月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">十月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/09/">九月 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/07/">七月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">十一月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">九月 2015</a><span class="archive-list-count">1</span></li></ul>
+    </div>
+  </aside>
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+</div>
+      </div>
+      <footer id="colophon" role="contentinfo">
+    <p>&copy; 2017 柴米油盐
+    All rights reserved.</p>
+    <p>Powered by <a href="http://hexo.io/" target="_blank">Hexo</a></p>
+</footer>
+    <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"1","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+<script src="/js/navigation.js"></script>
+
+<div id="bg"></div>
+
+  </div>
+</body>
+</html>
